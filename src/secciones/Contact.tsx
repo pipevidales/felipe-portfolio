@@ -15,12 +15,12 @@ function Contact (){
                     <a href="https://www.linkedin.com/in/felipe-vidales-tabares-1533a3425/?isSelfProfile=true"
                     target="_blank"
                     rel="noopener noreferrer"
-className="px-6 py-3 rounded-lg border border-gray-700 text-white hover:bg-gray-800 transition" >
+className="px-6 py-3 rounded-lg border border-gray-700 text-white hover:bg-gray-800 transition duration-200 hover:scale-110 cursor-pointer active:scale-95" >
                         LinkedIn
                     </a>
 
                     <a  href="mailto:pipevidalest08@gmail.com"
-className="px-6 py-3 rounded-lg bg-white text-gray-950 font-semibold hover:bg-gray-200 transition">
+className="px-6 py-3 rounded-lg bg-white text-gray-950 font-semibold hover:bg-gray-200 transition duration-200 hover:scale-110 hover:bg-gray-300 cursor-pointer active:scale-95">
                         Gmail
                     </a>
                 </div>

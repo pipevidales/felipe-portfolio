@@ -4,19 +4,25 @@ import VideoModal from "../componentes/VideoModal";
 import { useState } from "react";
 
 function Projects(){
-    const [isModalOpen, SetIsModalOpen] = useState(false)
+    const [isModalOpen, setIsModalOpen] = useState(false)
     const  [selectedVideo, setSelectedVideo] = useState("")
 
     const handleDemoClick = (videoUrl: string) => {
         setSelectedVideo(videoUrl)
-        SetIsModalOpen(true)
+        setIsModalOpen(true)
     } 
     return(
         <section id="projects" className="px-6 py-20">
-            <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold text-white mb-10">
+            <div className="mb-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
                     Projects
                 </h2>
+
+                 <p className="mt-3 max-w-2xl text-gray-400 leading-relaxed">
+                    A continuación algunos de los proyectos que he desarrollado mientras aprendo,
+                    experimento y fortalezco mis habilidades en desarrollo de software.
+                </p>
+                
                 <div className="grid md:grid-cols-2 gap-6">
                     {projects.map((project) => ( 
                         <ProjectCard
@@ -34,7 +40,7 @@ function Projects(){
             <VideoModal
                 isOpen={isModalOpen}
                 videoUrl={selectedVideo}
-                onClose={() => SetIsModalOpen(false)}
+                onClose={() => setIsModalOpen(false)}
             />
         </section>
     )
