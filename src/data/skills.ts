@@ -1,0 +1,18 @@
+export const skills = [
+  "Java",
+  "Spring Boot",
+  "PostgreSQL",
+  "Hibernate / JPA",
+  "Spring Security",
+  "JWT",
+  "REST APIs",
+  "Git",
+  "GitHub",
+  "Postman",
+  "Python",
+  "APIs",
+  "React",
+  "Typescript",
+  "Vite",
+  "Tailwind",
+]
