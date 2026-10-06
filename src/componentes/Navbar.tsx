@@ -7,7 +7,7 @@ function Navbar() {
     setIsMenuOpen(false)
   }
   return (
-    <nav className="sticky top-0 z-40 border-b border-gray-800 bg-gray-950/80 backdrop-blur">
+    <nav className="sticky top-0 z-40 border-b border-gray-500 bg-gray-800/80 backdrop-blur">
 
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
 
@@ -21,10 +21,17 @@ function Navbar() {
         <div className="hidden sm:flex gap-4 text-sm text-gray-400 sm:gap-6 sm:text-base">
 
           <a
+            href="#hero"
+            className="hover:text-white transition"
+          >
+            Inicio
+          </a>
+
+          <a
             href="#about"
             className="hover:text-white transition"
           >
-            About
+            About Me
           </a>
 
           <a

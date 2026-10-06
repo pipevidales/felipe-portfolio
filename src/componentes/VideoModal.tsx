@@ -17,7 +17,7 @@ function VideoModal({
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-6 z-50">
 
-      <div className="relative w-full max-w-4xl bg-gray-900 rounded-xl p-4">
+      <div className="relative w-full max-w-4xl bg-gray-900 rounded-xl p-2">
 
         <button
           onClick={onClose}

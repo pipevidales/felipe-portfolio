@@ -1,18 +1,32 @@
-export const skills = [
-  "Java",
-  "Spring Boot",
-  "PostgreSQL",
-  "Hibernate / JPA",
-  "Spring Security",
-  "JWT",
-  "REST APIs",
-  "Git",
-  "GitHub",
-  "Postman",
-  "Python",
-  "APIs",
-  "React",
-  "Typescript",
-  "Vite",
-  "Tailwind",
+export const skillGroups = [
+  {
+    title: "Backend",
+    skills: [
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "Hibernate / JPA",
+      "Spring Security",
+      "JWT",
+    ],
+  },
+    {
+    title: "Frontend",
+    skills: [
+      "React",
+      "Tailwind",
+      "Vite",
+      "TypeScript",
+    ],
+  },
+  {
+    title: "Tools & Other",
+    skills: [
+      "REST API´s",
+      "Git",
+      "GitHub",
+      "Postman",
+      "Python",
+    ],
+  },
 ]

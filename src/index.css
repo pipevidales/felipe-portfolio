@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@theme {
+  --font-friendly: "Nunito", ui-sans-serif, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-body {
-  font-family: Arial, sans-serif;
+@layer base {
+  body {
+    font-family: Arial, sans-serif;
+    @apply bg-gray-950 text-white;
+  }
 }

@@ -5,7 +5,7 @@ export const projects = [
       "REST API para gestionar usuarios, negocios, servicios, empleados, horarios y reservas.",
     technologies: ["Java", "Spring Boot", "PostgreSQL", "JWT"],
     githubUrl: "https://github.com/pipevidales",
-    demoUrl: "https://www.youtube.com/embed/zHm8GFK0m-E",
+    demoUrl: "https://www.youtube.com/embed/VmfLN-9aHRM",
   },
   {
     title: "Automatización Tigo",
