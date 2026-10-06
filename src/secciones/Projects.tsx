@@ -1,10 +1,12 @@
 import { useState } from "react"
-import ProjectCard from "../componentes/projectCard"
+import ProjectCard from "../componentes/ProjectCard"
 import VideoModal from "../componentes/VideoModal"
 import SectionTitle from "../componentes/SectionTitle"
-import { projects } from "../data/projetcs"
+import { projects } from "../data/Projetcs"
+import { useLanguage } from "../i18n/Uselanguage"
 
 function Projects() {
+  const { language, t } = useLanguage()
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedVideo, setSelectedVideo] = useState("")
 
@@ -16,25 +18,22 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen w-full py-24"
+      className="min-h-screen w-full scroll-mt-10 py-24"
     >
-      {/* Título a todo el ancho, igual que las demás secciones */}
-      <SectionTitle>Proyectos</SectionTitle>
+      <SectionTitle>{t.projects.title}</SectionTitle>
 
-      {/* Contenido centrado y con ancho limitado */}
       <div className="mx-auto mt-16 w-full max-w-6xl px-6 text-center">
 
         <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-gray-400">
-          Algunos de los proyectos que he desarrollado mientras aprendo,
-          experimento y fortalezco mis habilidades en desarrollo de software.
+          {t.projects.description}
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard
-              key={project.title}
-              title={project.title}
-              description={project.description}
+              key={project.id}
+              title={project.title[language]}
+              description={project.description[language]}
               technologies={project.technologies}
               githubUrl={project.githubUrl}
               onDemoClick={() => handleDemoClick(project.demoUrl)}

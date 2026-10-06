@@ -1,4 +1,8 @@
+import { useLanguage } from "../i18n/Uselanguage"
+
 function Hero() {
+  const { t } = useLanguage()
+
   return (
     <section
       id="hero"
@@ -10,16 +14,15 @@ function Hero() {
       <div className="mx-auto flex w-full max-w-4xl flex-col items-center text-center">
 
         <p className="mb-4 font-friendly text-xl font-semibold text-blue-400 md:text-2xl">
-          Hola, soy Felipe 👋
+          {t.hero.greeting}
         </p>
 
         <h1 className="mb-6 text-balance text-5xl font-bold tracking-tight text-white md:text-7xl">
-          Backend Software Developer
+          {t.hero.title}
         </h1>
 
         <p className="mx-auto mb-10 w-full max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl">
-          Me gusta construir aplicaciones, aprender nuevas tecnologías
-          y convertir ideas en soluciones útiles.
+          {t.hero.description}
         </p>
 
         {/* Botones: mismo tamaño, tipografía y padding */}
@@ -42,7 +45,7 @@ function Hero() {
             >
               <path d="M3 7a2 2 0 0 1 2-2h5l2 2h9a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
             </svg>
-            Ver proyectos
+            {t.hero.projectsBtn}
           </a>
 
           <a

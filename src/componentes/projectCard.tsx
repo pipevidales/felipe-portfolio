@@ -1,3 +1,5 @@
+import { useLanguage } from "../i18n/Uselanguage"
+
 type ProjectCardProps = {
   title: string
   description: string
@@ -13,6 +15,8 @@ function ProjectCard({
   githubUrl,
   onDemoClick,
 }: ProjectCardProps) {
+  const { t } = useLanguage()
+
   return (
     <article className="flex h-full flex-col items-center rounded-2xl border border-gray-800 bg-gray-900/60 p-8 text-center transition duration-200 hover:-translate-y-1 hover:border-blue-700/60 hover:bg-gray-900 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
 
@@ -38,7 +42,7 @@ function ProjectCard({
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-lg border  border-gray-700 px-5 py-2 text-xl font-medium text-gray-300 transition duration-200 hover:scale-105 hover:border-gray-500 hover:bg-gray-800 hover:text-white active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+          className="rounded-lg border border-gray-700 px-5 py-2 text-sm font-medium text-gray-300 transition duration-200 hover:scale-105 hover:border-gray-500 hover:bg-gray-800 hover:text-white active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
         >
           GitHub
         </a>
@@ -46,9 +50,9 @@ function ProjectCard({
         <button
           type="button"
           onClick={onDemoClick}
-          className="cursor-pointer rounded-lg bg-white px-5 py-2 text-xl font-semibold text-gray-950 transition duration-200 hover:scale-105 hover:bg-gray-300 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+          className="cursor-pointer rounded-lg bg-white px-5 py-2 text-sm font-semibold text-gray-950 transition duration-200 hover:scale-105 hover:bg-gray-300 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
         >
-          Ver demo
+          {t.projects.demo}
         </button>
       </div>
     </article>

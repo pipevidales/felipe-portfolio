@@ -1,24 +1,25 @@
-import { skillGroups } from "../data/skills"
+import { skillGroups } from "../data/Skills"
 import SectionTitle from "../componentes/SectionTitle"
+import { useLanguage } from "../i18n/Uselanguage"
 
 function Skills() {
+  const { language, t } = useLanguage()
+
   return (
     <section
       id="skills"
       className="flex min-h-screen w-full scroll-mt-10 flex-col py-24"
     >
-      {/* Título a todo el ancho, igual que las demás secciones */}
-      <SectionTitle>Skills</SectionTitle>
+      <SectionTitle>{t.skills.title}</SectionTitle>
 
-      {/* Contenido centrado horizontal y verticalmente */}
       <div className="flex flex-1 items-center py-16">
         <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 md:grid-cols-3 lg:gap-16">
 
           {skillGroups.map((group) => (
-            <div key={group.title} className="text-center">
+            <div key={group.id} className="text-center">
 
               <h3 className="text-lg font-semibold text-gray-200">
-                {group.title}
+                {group.title[language]}
               </h3>
               <div className="mx-auto mb-6 mt-3 h-0.5 w-10 rounded-full bg-blue-700" />
 

@@ -1,6 +1,15 @@
-export const skillGroups = [
+import type { Localized } from "../i18n/Translations"
+
+export type SkillGroup = {
+  id: string
+  title: Localized
+  skills: string[]
+}
+
+export const skillGroups: SkillGroup[] = [
   {
-    title: "Backend",
+    id: "backend",
+    title: { es: "Backend", en: "Backend" },
     skills: [
       "Java",
       "Spring Boot",
@@ -10,23 +19,14 @@ export const skillGroups = [
       "JWT",
     ],
   },
-    {
-    title: "Frontend",
-    skills: [
-      "React",
-      "Tailwind",
-      "Vite",
-      "TypeScript",
-    ],
+  {
+    id: "frontend",
+    title: { es: "Frontend", en: "Frontend" },
+    skills: ["React", "Tailwind", "Vite", "TypeScript"],
   },
   {
-    title: "Tools & Other",
-    skills: [
-      "REST API´s",
-      "Git",
-      "GitHub",
-      "Postman",
-      "Python",
-    ],
+    id: "tools",
+    title: { es: "Herramientas y otros", en: "Tools & Other" },
+    skills: ["REST APIs", "Git", "GitHub", "Postman", "Python"],
   },
 ]
