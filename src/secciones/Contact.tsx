@@ -1,5 +1,5 @@
 import SectionTitle from "../componentes/SectionTitle"
-import { useLanguage } from "../i18n/Uselanguage"
+import { useLanguage } from "../i18n/useLanguage"
 
 function Contact() {
   const { t } = useLanguage()

@@ -1,6 +1,6 @@
 import aboutImage from "../imagenes/ImagenProgramador.png"
 import SectionTitle from "../componentes/SectionTitle"
-import { useLanguage } from "../i18n/Uselanguage"
+import { useLanguage } from "../i18n/useLanguage"
 
 function About() {
   const { t } = useLanguage()

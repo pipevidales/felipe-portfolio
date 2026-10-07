@@ -2,8 +2,10 @@ import { useState } from "react"
 import ProjectCard from "../componentes/ProjectCard"
 import VideoModal from "../componentes/VideoModal"
 import SectionTitle from "../componentes/SectionTitle"
-import { projects } from "../data/Projetcs"
-import { useLanguage } from "../i18n/Uselanguage"
+import { projects } from "../data/Projects"
+import { useLanguage } from "../i18n/useLanguage"
+
+
 
 function Projects() {
   const { language, t } = useLanguage()

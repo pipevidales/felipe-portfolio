@@ -1,4 +1,4 @@
-import { useLanguage } from "../i18n/Uselanguage"
+import { useLanguage } from "../i18n/useLanguage"
 
 type ProjectCardProps = {
   title: string

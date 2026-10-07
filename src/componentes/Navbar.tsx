@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useLanguage } from "../i18n/Uselanguage"
+import { useLanguage } from "../i18n/useLanguage"
 import LanguageToggle from "./LanguageToggle"
 
 const links = [
