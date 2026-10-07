@@ -22,7 +22,7 @@ function Contact() {
           <div className="flex flex-wrap justify-center gap-4">
 
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/felipe-vidales-tabares-1533a3425/?isSelfProfile=true"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex cursor-pointer items-center gap-3 rounded-lg border border-gray-700 px-7 py-3.5 text-base font-semibold text-white transition duration-200 hover:scale-105 hover:border-blue-600 hover:bg-gray-800 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
@@ -46,7 +46,7 @@ function Contact() {
             </a>
 
             <a
-              href="mailto:tuemail@example.com"
+              href="mailto:pipevidalest08@gmail.com"
               className="inline-flex cursor-pointer items-center gap-3 rounded-lg bg-white px-7 py-3.5 text-base font-semibold text-gray-950 shadow-lg shadow-blue-600/20 transition duration-200 hover:scale-105 hover:bg-gray-200 active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
             >
               <svg

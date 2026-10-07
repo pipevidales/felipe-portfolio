@@ -22,7 +22,7 @@ export const projects: Project[] = [
     },
     technologies: ["Java", "Spring Boot", "PostgreSQL", "JWT"],
     githubUrl: "https://github.com/pipevidales",
-    demoUrl: "https://www.youtube.com/embed/VmfLN-9aHRM",
+    demoUrl: "https://www.youtube.com/embed/Hfm94aHAbYQ",
   },
   {
     id: "tigo-automation",
